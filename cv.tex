@@ -1,0 +1,212 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+%\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+%\usepackage{csquotes}
+\usepackage[margin=2.5cm]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{2cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{5cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\cfoot{\thepage\ of \pageref{LastPage}}
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Estelle} % Your first name
+\familyname{Chasseloup} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{\Large{PhD Applicant}}
+%\quote{\raggedleft Available from January 2017 \endgraf}%\\ Make your life an Eulerian graph}
+\address{10 rue Gimelli}{83000 Toulon, France}
+\mobile{+33681743798}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{estelle.chslp@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{Birth: 17 December 1991}
+%\extrainfo{Single - Driving licence}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\maketitle
+\section{Education}
+\cventry{2014-2017}{MS, Pharmaceutical Sciences: Research in Pharmacokinetics
+(three-year program)}{Université d'Aix-Marseille}{Marseille}{France}{}
+\cventry{2014}{Special Diploma -- PK/PD Modeling and Simulation: Population
+Approach}{Université d'Aix-Marseille}{Marseille}{France}{}
+\cventry{2010-2014}{BS, Pharmaceutical Sciences}{Université d'Aix-Marseille}{Marseille}{France}{}
+
+\section{Research Interests}
+\cvline{}{%
+\begin{itemize}
+\item Pharmacometrics,
+\item Clinical trial design optimization,
+\item In-vitro In-vivo extrapolation,
+\item Development of semi-mechanistic models.
+\end{itemize}%
+}
+
+\section{Languages}
+
+	\cventry{French}{Mother Tongue}{}{}{}{}
+	\cvitemwithcomment{English}{\textbf{Independent User}.~ \textit{TOEIC score: 960/990}}{}{}{}
+	\cvitemwithcomment{Italian}{\textbf{Basic User}.~~~~~~~~~~~~ \textit{B2 CEFR level}}{}{}{}
+	\cvitemwithcomment{Spanish}{\textbf{Basic User}.~~~~~~~~~~~~ \textit{B1 CEFR level}}{}{}{}
+
+\section{Professional Experiences}
+
+\cventry{2017\\6 months}{Internship in PBPK}{Technologie Servier}{Orléans}{France}
+{Software assessment - SimCYP, GastroPlus and PK-Sim.\\
+\hspace*{1cm} $\rightarrow$ \textit{Advisor: Pharm.D. Magali Amiel.}}
+
+	\cventry{2016\\6 months}{Internship in Clinical
+	Pharmacokinetics}{Galderma}{Sophia Antipolis}{France}{Non compartmental
+analysis, development of individual and population PK models for cutaneous
+administration, model evaluation by bootstrapping visual predictive checks and
+cross validation, individual simulations - Phoenix WinNonlin, NLME and R.\\
+\hspace*{1cm} $\rightarrow$ \textit{Advisor: Dr. Khaled Benkali.}}
+
+	\cventry{2015\\6 months}{Hospital Internship in Clinical
+	Pharmacology}{APHM}{Marseille}{France}{External validation of a population PK model in
+pediatrics - NONMEM and R.\\
+\hspace*{1cm} $\rightarrow$ \textit{Advisor: Dr. Amélie Marsot.}}
+
+	\cventry{2015\\3 months}{Internship in Pharmacometrics}{Hoffman-La
+	Roche}{Basel}{Switzerland}{Development and evaluation of a population PK
+model - NONMEM and R.\\
+\hspace*{1cm} $\rightarrow$ \textit{Advisor: Dr. Valérie Cosson.}}
+
+	%\cventry{2011-2014}{Discovery and application officinal internships - 10 weeks}{Pharmacie Vauban - Pharmacie du Théatre - Pharmacie de la Joliette}{Marseille and Toulon}{France}{}
+\pagebreak
+
+\section{Relevant Coursework}
+
+\cventry{2016-2017}{M2 Research in Pharmacokinetics}{Prof. Joseph Ciccolini,
+	Prof. Florence Gattacceca}{}{}{%
+\begin{itemize}
+	\item Modeling and Simulation: NLME and PBPK;
+	\item Non-clinical and clinical drug development;
+	\item Nanocarriers, analytical methods (RMN, IR, CPG, HPLC) and standard frameworks.
+\end{itemize}%
+}
+\cventry{2014}{Special Diploma}{Prof. Athanassios Iliadis}{}{}{%
+\begin{itemize}
+\item Fundamental and usual PK models - Real process and model - Statistics,
+Probability, Estimation.
+\item Population approaches, modeling in research and development: non-linear
+programming, simulation, dosage adjustement.
+\item NONMEM, Phoenix WinNonLin NLME, Monolix, KineticPro and MATLAB.
+\end{itemize}%
+}
+
+\section{Relevant Projects}
+\cventry{2015-2016}{Hospital-University year}{Research option in Oncology
+Pharmacochemistery}{}{}{
+Development and assessment of new anti-cancer agents. Microwave-assisted synthesis
+of quinazoline derivatives then cytotoxic (${IC}_{50}$ determination with MTT test) and anti-
+invasive (cell escape test on fibronectin with speroids) properties assessment.
+}
+\cventry{2014-2015}{M1 Industry specialization}{Non-clinical drug development
+option}{}{}{In-vitro study of inhibitory effect of erythromycin on CYP450 to assess
+potential drug interactions.
+\begin{itemize}
+	\item Determination of erythromycin N-demethylase activity: turnover, $K_m$
+		and $V_{\max}$ ;
+	\item Inhibition study of various drug on CYP450 erythromycin N-demethylase activity and
+ketoconazole $K_i$ determination;
+\item Assessment of erythromycin in-vivo inhibiting power.
+\end{itemize}%
+}
+
+\section{Skills on Softwares}
+
+	\cventry{~}{NONMEM - Monolix - Phoenix WinNonLin NLME -
+	KineticPro}{}{}{Exploratory analysis, non compartmental analysis,
+individual and population PK modeling, dosage adjustment}{}
+	\cventry{~}{R, MATLAB}{}{}{Data analysis, plots, basic programming}{}
+	\cventry{~}{SimCYP, GastroPlus, PK-Sim}{}{}{Physiologically Based Pharmacokinetics modelling}{}
+	%\cventry{~}{Phoenix WinNonLin - NLME}{}{}{Exploratory analysis, non compartmental analysis, individual and population PK modeling}{} %,goodness of fit plots, visual predictive checks, bootstrapping}{}	
+	%\cventry{~}{KineticPro}{}{}{Individual and population PK modeling, dosage adjustment}{}
+	%\cventry{~}{R}{}{}{Exploratory analysis, goodness of fit plots, visual predictive checks, data managment, Xpose and GGplot packages}{}
+	%\cventry{~}{MATLAB}{}{}{Array calculus, matrix algebra, statistics, graphics, basic programming}{}
+
+	%\cventry{NONMEM}{Approche de population PK/PD}{}{}{}{}{}
+	%\cventry{Phoenix WinNonlin - NLME}{Approche de population PK/PD}{}{}{}{}
+	%\cventry{Monolix}{Approche de population PK/PD}{}{}{}{}{}
+	%\cventry{Pirana}{Plateforme de modélisation en Pharmacométrie}{}{}{}{}
+	%\cventry{R}{Statistiques, Analyse exploratoire, Goodness of fit plots, Visual predictive checks, Gestion de bases de données}{}{}{}{}{}
+	%\cventry{MATLAB}{Algèbre matriciel, Statistiques, Graphiques}{}{}{}{}
+	%\cventry{Nonmat6}{Analyse de données}{Bibliothèque d'outils graphiques et numériques pour NONMEM}{}{}{}
+
+	%\section{Pending Submissions}
+	\section{Personal Interests}
+\cvline{}{%
+Hiking,
+Problem solving,
+Lifelong learning,
+DIY.
+}
+
+	\section{References}
+	\cventry{}{PharmD. Magali Amiel}{}{}{}{
+Team leader DMPK at Technologie Servier.\\
+\href{mailto:magali.amiel@servier.com}
+{\textit{\emailsymbol magali.amiel@servier.com}}
+	}
+	\cventry{}{Prof. Florence Gattacceca}{}{}{}{
+Professor in Pharmacokinetics, Université de Montpellier.\\
+\href{mailto:florence.gattacceca@umontpellier.fr}
+{\textit{\emailsymbol florence.gattacceca@umontpellier.fr}}
+	}
+	\cventry{}{Dr. Amélie Marsot}{}{}{}{
+Research engineer in Pharmacometrics, APHM.\\
+\href{mailto:amelie.marsot@ap-hm.fr}
+{\textit{\emailsymbol amelie.marsot@ap-hm.fr}}
+	}
+	\cventry{}{Prof. Athanassios Iliadis}{}{}{}{
+Professor Emeritus, Université d'Aix-Marseille.\\
+\href{mailto:athanassios.iliadis@univ-amu.fr}
+{\textit{\emailsymbol athanassios.iliadis@univ-amu.fr}}
+	}
+
+\end{document}
